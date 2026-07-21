@@ -7,4 +7,6 @@ import com.klef.soa.entity.Patient;
 public interface PatientService {
     Patient addPatient(Patient p);
     List<Patient> displayAllPatients();
+    Patient updatePatient(Patient p);
+    
 }
