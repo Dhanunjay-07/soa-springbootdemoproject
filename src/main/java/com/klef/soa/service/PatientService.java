@@ -5,8 +5,12 @@ import java.util.List;
 import com.klef.soa.entity.Patient;
 
 public interface PatientService {
-    Patient addPatient(Patient p);
+    Patient addPatient(Patient patient);
     List<Patient> displayAllPatients();
     Patient updatePatient(Patient p);
+    Patient displayPatientById(Long id);
+    String  deletePatientById(Long id);
+    	List<Patient> displayPatientsByGender(String gender);
+    	
     
 }
